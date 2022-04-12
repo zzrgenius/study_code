@@ -1,0 +1,81 @@
+{
+    "name": "vscode_stm32f1_test",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "showRepathOnLog": true,
+    "threadNum": 18,
+    "rootDir": "e:\\我的坚果云\\学习\\study_code\\vscode_embedded\\vscode_stm32f1_test",
+    "dumpPath": ".eide\\log",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        ".eide\\deps",
+        "lib\\cmsis",
+        "src",
+        "hal\\STM32F10x_StdPeriph_Driver",
+        "hal\\STM32F10x_StdPeriph_Driver\\src",
+        "hal\\STM32F10x_StdPeriph_Driver\\inc"
+    ],
+    "libDirs": [],
+    "defines": [
+        "USE_STDPERIPH_DRIVER",
+        "STM32F10X_MD"
+    ],
+    "sourceList": [
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\misc.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_adc.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_exti.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_gpio.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_rcc.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_spi.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_tim.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_usart.c",
+        "hal\\STM32F10x_StdPeriph_Driver\\system_stm32f10x.c",
+        "src\\main.c",
+        "src\\startup_stm32f10x_md.s",
+        "src\\stm32f10x_it.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1647586713665.3572,
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "toolPrefix": "arm-none-eabi-",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "target": "cortex-m3"
+        },
+        "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++14",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "C_FLAGS": "-ffunction-sections -fdata-sections",
+            "CXX_FLAGS": "-ffunction-sections -fdata-sections"
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": "-ffunction-sections -fdata-sections"
+        },
+        "linker": {
+            "LD_FLAGS": "--specs=nosys.specs --specs=nano.specs -Wl,--gc-sections",
+            "output-format": "elf",
+            "LIB_FLAGS": "-lm",
+            "link-scatter": [
+                "\"e:/我的坚果云/学习/study_code/vscode_embedded/vscode_stm32f1_test/stm32f1x_64KB_flash.ld\""
+            ]
+        }
+    },
+    "sha": {
+        "c/cpp-defines": "70c5a53519e1f5445e4f0c71543b00f7",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "30aa8671b8ec650757758fe00f264e94",
+        "c/cpp-compiler": "4ace4c86113d59b3d6e75b5fdc5d724e",
+        "asm-compiler": "4e936c1650c2f18609e37408d1cfbb9f",
+        "linker": "55f103212275fe9a22ef466c105a29b2"
+    }
+}

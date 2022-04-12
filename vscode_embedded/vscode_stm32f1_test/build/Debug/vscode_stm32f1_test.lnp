@@ -1,0 +1,14 @@
+-mthumb -mcpu=cortex-m3 -T "e:/我的坚果云/学习/study_code/vscode_embedded/vscode_stm32f1_test/stm32f1x_64KB_flash.ld" --specs=nosys.specs --specs=nano.specs -Wl,--gc-sections -Wl,--print-memory-usage
+-Wl,-Map=./build/Debug/vscode_stm32f1_test.map
+-o ./build/Debug/vscode_stm32f1_test.elf ./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/misc.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+./build/Debug/hal/STM32F10x_StdPeriph_Driver/system_stm32f10x.o
+./build/Debug/src/main.o
+./build/Debug/src/stm32f10x_it.o
+./build/Debug/src/startup_stm32f10x_md.o -lm
